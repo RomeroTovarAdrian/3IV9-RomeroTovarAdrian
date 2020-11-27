@@ -14,7 +14,7 @@ import java.util.*;
         switch (programa) {
             case 1:
                 do{
-                System.out.println("Leer 10 numeros y sacar el promedio de los negativos y los positivos");
+                System.out.println("Sueldo");
                 opcion.Sueldo();
                 System.out.println("1 para repetir, 0 para salir");
                 salida = entrada.nextInt();
@@ -23,7 +23,7 @@ import java.util.*;
 
             case 2:
                 do{
-                System.out.println("Calculador promedio de pocisiones pares");
+                System.out.println("Provedores");
                 opcion.Provedores();
                 System.out.println("1 para repetir, 0 para salir");
                 salida = entrada.nextInt();
@@ -32,7 +32,7 @@ import java.util.*;
 
             case 3:
             do{
-                System.out.println("Calificaciones");
+                System.out.println("Biblioteca");
                 opcion.Biblioteca();
                 System.out.println("1 para repetir, 0 para salir");
                 salida = entrada.nextInt();
