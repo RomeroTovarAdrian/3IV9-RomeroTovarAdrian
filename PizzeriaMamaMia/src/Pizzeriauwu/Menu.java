@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PizzeriaMamaMia;
+package Pizzeriauwu;
 
 //import Pizza.Queso;
 import Pizza.*;
@@ -31,6 +31,7 @@ public class Menu {
         System.out.println("3.- Pizza de Vegetariana");
         System.out.println("Gracias uwu");
         opc = entrada.nextInt();
+        if(opc<3 && opc>0){
         opcion.tamano();
         tam = entrada.nextInt();
         switch(tam){
@@ -97,7 +98,6 @@ public class Menu {
                 break;
             case 2:
                 piza = new Peperonni();
-                piza.hornear();
                 opcion.elegirpeperonni();
                 pep = entrada.nextInt();
                 if(pep==1){
@@ -131,19 +131,21 @@ public class Menu {
                         break;
                     }
                 }
+                piza.hornear();
                 System.out.println("La pizza se corta en "+corte+" porciones");
                 piza.empacar();
-                
+                System.out.println("El precio va a ser de "+precio+"$");
                 break;
             case 3: 
                 piza = new Vegetariana();
                 piza.hornear();
                 System.out.println("La pizza se corta en "+corte+" porciones");
                 piza.empacar();
+                System.out.println("El precio va a ser de "+precio+"$");
                 break;
             default:
         }
-        
+        }
         }while(opc != 4);
         
     }
@@ -169,4 +171,3 @@ public void elegirpeperonni(){
         System.out.println("2.- Peperonni doble");
     }
 }    
-
